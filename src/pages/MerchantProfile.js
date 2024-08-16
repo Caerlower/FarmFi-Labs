@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { ethers, BigNumber } from 'ethers'; // Import BigNumber separately
+import { ethers } from 'ethers'; // Import ethers for general interaction
+import { BigNumber } from '@ethersproject/bignumber'; // Correct import for BigNumber in v6
 import marketplaceAbi from '../abis/Marketplace.json'; // Import ABI for marketplace interactions
 import '../styles/profile.css'; // Add your CSS for styling
 
@@ -52,7 +53,7 @@ const MerchantProfile = () => {
   const fetchSalesData = async (signer, accountAddress) => {
     const marketplaceContract = new ethers.Contract(marketplaceContractAddress, marketplaceAbi, signer);
     const salesData = [];
-    let totalRev = BigNumber.from(0);
+    let totalRev = BigNumber.from(0); // Use BigNumber from '@ethersproject/bignumber'
 
     const salesCount = await marketplaceContract.getSalesCount(accountAddress); // Assume this is implemented
     for (let i = 0; i < salesCount; i++) {
