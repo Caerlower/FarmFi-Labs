@@ -1,0 +1,66 @@
+/* src/styles/governance.css */
+
+.governance {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .governance h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .proposals-list {
+    margin-bottom: 40px;
+  }
+  
+  .proposal {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .proposal h4 {
+    margin-bottom: 10px;
+  }
+  
+  .proposal p {
+    margin: 5px 0;
+  }
+  
+  .create-proposal input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  

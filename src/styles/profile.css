@@ -1,0 +1,40 @@
+/* src/styles/profile.css */
+
+.profile {
+    margin-left: 220px; /* Offset for sidebar */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .profile h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .profile-section {
+    margin-bottom: 40px;
+  }
+  
+  .profile-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .profile-section ul li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .profile-section ul li h4 {
+    margin: 0 0 10px 0;
+  }
+  

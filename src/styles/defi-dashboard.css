@@ -1,0 +1,47 @@
+/* src/styles/defi-dashboard.css */
+
+.defi-dashboard {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .defi-dashboard h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .wallet-info, .defi-info, .defi-stats {
+    margin-bottom: 20px;
+  }
+  
+  .wallet-info p, .defi-info p, .defi-stats p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .defi-stats {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  

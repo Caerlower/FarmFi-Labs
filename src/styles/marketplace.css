@@ -1,0 +1,63 @@
+/* src/styles/marketplace.css */
+
+.marketplace {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .marketplace h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .listings {
+    margin-bottom: 40px;
+  }
+  
+  .listing {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .listing h4 {
+    margin-bottom: 10px;
+  }
+  
+  .listing p {
+    margin: 5px 0;
+  }
+  
+  .create-listing input,
+  .create-listing textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
