@@ -1,40 +1,87 @@
 /* src/styles/profile.css */
 
 .profile {
-    margin-left: 220px; /* Offset for sidebar */
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+  margin-left: 220px; /* Offset for sidebar */
+  padding: 20px;
+  background-color: #f0fff4; /* Light green background */
+  border: 1px solid #c6f6d5; /* Light green border */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2f855a; /* Dark green for headers */
+  text-align: center;
+}
+
+.profile-section {
+  margin-bottom: 40px;
+}
+
+.profile-section h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #38a169; /* Medium green for section titles */
+}
+
+.profile-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-section ul li {
+  border: 1px solid #c6f6d5; /* Light green border */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-section ul li:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+}
+
+.profile-section ul li h4 {
+  margin: 0 0 10px 0;
+  color: #2f855a; /* Dark green for list item titles */
+}
+
+/* Button Styling */
+.btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #38a169; /* Green theme for buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2f855a; /* Darker green on hover */
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile {
+    margin-left: 0; /* Remove offset for sidebar on smaller screens */
+    padding: 15px;
   }
-  
-  .profile h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .profile-section {
-    margin-bottom: 40px;
-  }
-  
-  .profile-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .profile-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
+
   .profile-section ul li {
-    border: 1px solid #ccc;
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
   }
-  
-  .profile-section ul li h4 {
-    margin: 0 0 10px 0;
+
+  .btn {
+    width: 100%; /* Full-width buttons on smaller screens */
+    text-align: center;
   }
-  
+}

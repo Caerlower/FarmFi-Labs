@@ -1,68 +1,142 @@
-/* src/styles/header.css */
-
 .header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px 0;
-    text-align: center; /* Center the header */
-    position: relative;
+  background-color: #2f855a; /* Dark green */
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow for better depth */
+  transition: margin-left 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transitions for both margin and background color */
+  margin-left: 60px; /* Initial margin when the sidebar is collapsed */
+  font-family: 'Poppins', sans-serif; /* Add a more modern font */
+}
+
+.sidebar-open .header {
+  margin-left: 200px; /* Increased margin when the sidebar is expanded */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Spread out the brand and links */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #c6f6d5; /* Lighter green on hover */
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  color: #c6f6d5; /* Light green on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background effect on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-left: 10px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #276749; /* Medium dark green */
+}
+
+.btn-secondary {
+  background-color: #38a169; /* Green */
+}
+
+.btn:hover {
+  background-color: #22543d; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.btn:active {
+  transform: translateY(0); /* Remove lift on click */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .header {
+    margin-left: 0; /* Disable left margin on mobile */
+    padding: 15px 20px;
   }
-  
+
   .navbar {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
   }
-  
+
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+
   .nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
   }
-  
+
   .nav-links li {
-    margin: 0 15px;
+    margin: 10px 0;
   }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
+
   .auth-buttons {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    flex-direction: column;
+    margin-top: 10px;
   }
-  
+
   .btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    margin-left: 10px;
-    color: white;
-    border: none;
-    background-color: #28a745;
-    border-radius: 4px;
-    cursor: pointer;
+    margin: 5px 0;
+    padding: 12px 30px;
   }
-  
-  .login-btn {
-    background-color: #007bff;
-  }
-  
-  .signup-btn {
-    background-color: #28a745;
-  }
-  
-  .btn:hover {
-    opacity: 0.8;
-  }
-  
+}
+
+/* Sidebar-expanded modifications */
+.sidebar-open .navbar {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebar-open .main-content,
+.sidebar-open header {
+  margin-left: 200px;
+}
+

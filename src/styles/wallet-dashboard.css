@@ -1,29 +1,80 @@
-/* src/styles/wallet-dashboard.css */
-
 .wallet-dashboard {
-    max-width: 600px;
-    margin: 50px auto;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #9ae6b4; /* Light green border */
+  border-radius: 10px;
+  background-color: #f0fdf4; /* Light green background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.wallet-dashboard h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #276749; /* Dark green */
+}
+
+.wallet-info {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2f855a; /* Medium green */
+}
+
+.wallet-info p {
+  margin: 15px 0;
+}
+
+.wallet-info strong {
+  font-weight: bold;
+  color: #22543d; /* Darker green for emphasis */
+}
+
+.wallet-info span {
+  display: inline-block;
+  background-color: #e6fffa; /* Very light green background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #2f855a;
+}
+
+.wallet-dashboard .btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #2f855a; /* Dark green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  margin-top: 20px;
+}
+
+.wallet-dashboard .btn:hover {
+  background-color: #276749; /* Darker green on hover */
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wallet-dashboard {
     padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #f9f9f9;
   }
-  
+
   .wallet-dashboard h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.75rem;
   }
-  
+
   .wallet-info {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 1rem;
   }
-  
-  .wallet-info p {
-    margin: 10px 0;
+
+  .wallet-dashboard .btn {
+    font-size: 1rem;
+    padding: 10px;
   }
-  
-  strong {
-    font-weight: bold;
-  }
-  
+}

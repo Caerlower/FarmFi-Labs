@@ -1,63 +1,101 @@
 /* src/styles/marketplace.css */
 
 .marketplace {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #c6f6d5; /* Light green border */
+  border-radius: 8px;
+  background-color: #f0fff4; /* Light green background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marketplace h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2f855a; /* Dark green for header */
+}
+
+.listings {
+  margin-bottom: 40px;
+}
+
+.listing {
+  border: 1px solid #c6f6d5; /* Light green border */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Slight shadow for listing cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.listing:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+}
+
+.listing h4 {
+  margin-bottom: 10px;
+  color: #2f855a; /* Dark green for listing title */
+}
+
+.listing p {
+  margin: 5px 0;
+  color: #555; /* Gray for content */
+}
+
+.create-listing input,
+.create-listing textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #c6f6d5; /* Light green border */
+  background-color: #f0fff4; /* Light green background for inputs */
+}
+
+.create-listing input:focus,
+.create-listing textarea:focus {
+  outline: none;
+  border-color: #38a169; /* Darker green border on focus */
+  box-shadow: 0 0 5px rgba(56, 161, 105, 0.5); /* Green shadow on focus */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #38a169; /* Medium green */
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-success {
+  background-color: #2f855a; /* Dark green */
+}
+
+.btn:hover {
+  background-color: #276749; /* Even darker green on hover */
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .marketplace {
+    padding: 15px;
   }
-  
-  .marketplace h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .listings {
-    margin-bottom: 40px;
-  }
-  
+
   .listing {
-    border: 1px solid #e0e0e0;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    background-color: #fff;
+    padding: 15px;
   }
-  
-  .listing h4 {
-    margin-bottom: 10px;
-  }
-  
-  .listing p {
-    margin: 5px 0;
-  }
-  
-  .create-listing input,
-  .create-listing textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
+
   .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 4px;
-    text-decoration: none;
+    width: 100%; /* Full-width buttons on smaller screens */
+    text-align: center;
   }
-  
-  .btn-success {
-    background-color: #28a745;
-  }
-  
-  .btn:hover {
-    opacity: 0.8;
-  }
-  
+}

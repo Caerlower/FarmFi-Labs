@@ -1,60 +1,86 @@
 /* src/styles/home.css */
 
 .home {
-    max-width: 1200px;
-    margin: 50px auto;
-    text-align: center;
-  }
-  
-  .intro {
-    margin-bottom: 40px;
-  }
-  
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #2f855a; /* Dark green */
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 40px;
+}
+
+.feature {
+  padding: 20px;
+  border: 1px solid #c6f6d5; /* Light green border */
+  border-radius: 8px;
+  background-color: #f0fff4; /* Light green background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.feature h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2f855a; /* Dark green */
+}
+
+.feature p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #38a169; /* Medium green */
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2f855a; /* Darker green on hover */
+  opacity: 0.9;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
   .intro h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
   }
-  
-  .intro p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
+
   .features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr; /* Stack features on smaller screens */
   }
-  
+
   .feature {
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    padding: 15px;
   }
-  
-  .feature h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .feature p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #666;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 4px;
-    text-decoration: none;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
+}

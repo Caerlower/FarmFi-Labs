@@ -1,54 +1,114 @@
 /* src/styles/governance-panel.css */
 
 .governance-panel {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.governance-panel h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #2f855a;
+  font-weight: bold;
+}
+
+.proposals-list {
+  margin-bottom: 40px;
+}
+
+.proposal {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background-color: #f0fff4;
+  transition: transform 0.2s ease;
+}
+
+.proposal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.proposal h4 {
+  margin-bottom: 12px;
+  color: #2f855a;
+}
+
+.proposal p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #48bb78;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2f855a;
+}
+
+.create-proposal {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f0fff4;
+}
+
+.create-proposal input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.create-proposal button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #48bb78;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-proposal button:hover {
+  background-color: #2f855a;
+}
+
+@media (max-width: 768px) {
+  .governance-panel {
+      padding: 20px;
+      margin: 20px;
   }
-  
-  .governance-panel h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .proposals-list {
-    margin-bottom: 40px;
-  }
-  
+
   .proposal {
-    border: 1px solid #e0e0e0;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    background-color: #fff;
+      padding: 15px;
   }
-  
-  .proposal h4 {
-    margin-bottom: 10px;
+
+  .create-proposal input, .create-proposal button {
+      font-size: 1rem;
+      padding: 10px;
   }
-  
-  .proposal p {
-    margin: 5px 0;
-  }
-  
-  .btn {
-    margin: 5px 10px 0 0;
-  }
-  
-  .create-proposal {
-    margin-top: 20px;
-  }
-  
-  .create-proposal input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .create-proposal button {
-    width: 100%;
-  }
-  
+}

@@ -1,12 +1,13 @@
 /* src/styles/header-footer.css */
 
 .header {
-  background-color: #007bff;
+  background-color: #2f855a; /* Dark green background */
   padding: 15px 0;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -27,9 +28,14 @@
 
 .navbar-brand {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #d4edda; /* Light green hover effect */
 }
 
 .nav-links {
@@ -49,6 +55,7 @@
   font-size: 1.2rem;
   display: flex;
   align-items: center;
+  transition: color 0.3s ease;
 }
 
 .nav-link svg {
@@ -56,6 +63,7 @@
 }
 
 .nav-link:hover {
+  color: #c6f6d5; /* Light green on hover */
   text-decoration: underline;
 }
 
@@ -68,13 +76,14 @@
   padding: 10px 20px;
   font-size: 1rem;
   margin-left: 10px;
-  background-color: #28a745;
+  background-color: #38a169; /* Green button */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .btn svg {
@@ -82,10 +91,11 @@
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: #2f855a; /* Dark green for primary button */
 }
 
 .btn:hover {
+  background-color: #276749; /* Darker green on hover */
   opacity: 0.9;
 }
 
@@ -93,4 +103,25 @@
   color: white;
   display: flex;
   align-items: center;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .auth-section {
+    margin-top: 15px;
+  }
 }

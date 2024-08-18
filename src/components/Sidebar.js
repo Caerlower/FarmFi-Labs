@@ -1,56 +1,51 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTachometerAlt, faShoppingCart, faCoins, faGavel, faUserTie, faStore, faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
-import '../styles/sidebar.css'; // Add your CSS for styling
+import { faTachometerAlt, faShoppingCart, faCoins, faGavel, faUserTie, faStore } from '@fortawesome/free-solid-svg-icons';
+import '../styles/sidebar.css';
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true); // State to toggle sidebar visibility
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <>
-      <button className="toggle-button" onClick={toggleSidebar}>
-        <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
-      </button>
-      <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
-        <ul>
-          <li>
-            <Link to="/dashboard">
-              <FontAwesomeIcon icon={faTachometerAlt} /> Dashboard
-            </Link>
-          </li>
-          <li>
-            <Link to="/marketplace">
-              <FontAwesomeIcon icon={faShoppingCart} /> Marketplace
-            </Link>
-          </li>
-          <li>
-            <Link to="/staking">
-              <FontAwesomeIcon icon={faCoins} /> Staking
-            </Link>
-          </li>
-          <li>
-            <Link to="/governance">
-              <FontAwesomeIcon icon={faGavel} /> Governance
-            </Link>
-          </li>
-          <li>
-            <Link to="/profile/farmer">
-              <FontAwesomeIcon icon={faUserTie} /> Farmer Profile
-            </Link>
-          </li>
-          <li>
-            <Link to="/profile/merchant">
-              <FontAwesomeIcon icon={faStore} /> Merchant Profile
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </>
+    <div className="sidebar">
+      <ul>
+        <li>
+          <Link to="/">
+            <FontAwesomeIcon icon={faTachometerAlt} />
+            <span>Dashboard</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/marketplace">
+            <FontAwesomeIcon icon={faShoppingCart} />
+            <span>Marketplace</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/staking">
+            <FontAwesomeIcon icon={faCoins} />
+            <span>Staking</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/governance">
+            <FontAwesomeIcon icon={faGavel} />
+            <span>Governance</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/profile/farmer">
+            <FontAwesomeIcon icon={faUserTie} />
+            <span>Farmer Profile</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/profile/merchant">
+            <FontAwesomeIcon icon={faStore} />
+            <span>Merchant Profile</span>
+          </Link>
+        </li>
+      </ul>
+    </div>
   );
 };
 

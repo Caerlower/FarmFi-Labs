@@ -1,47 +1,70 @@
 /* src/styles/defi-dashboard.css */
 
 .defi-dashboard {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.defi-dashboard h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #2f855a;
+  font-weight: bold;
+}
+
+.wallet-info, .defi-info, .defi-stats {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f0fff4;
+  border-left: 4px solid #38a169;
+}
+
+.wallet-info p, .defi-info p, .defi-stats p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #48bb78;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #38a169;
+}
+
+.defi-stats {
+  margin-top: 25px;
+  font-size: 17px;
+  color: #2d3748;
+}
+
+@media (max-width: 768px) {
+  .defi-dashboard {
+      padding: 20px;
+      margin: 20px;
   }
-  
-  .defi-dashboard h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .wallet-info, .defi-info, .defi-stats {
-    margin-bottom: 20px;
-  }
-  
-  .wallet-info p, .defi-info p, .defi-stats p {
-    font-size: 16px;
-    margin: 10px 0;
-  }
-  
+
   .btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
+      font-size: 16px;
+      padding: 10px;
   }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .defi-stats {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #555;
-  }
-  
+}
