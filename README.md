@@ -2,11 +2,7 @@
 
 ## Table of Contents
 
-- [Project Description](#project-description)
-- [Target Audience](#target-audience)
-- [Potential Impact](#potential-impact)
-- [Tech Stack](#tech-stack)
-- [Installation and Setup](#installation-and-setup)
+- [Project Description](#project-description) - [Target Audience](#target-audience) - [Potential Impact](#potential-impact) - [Tech Stack](#tech-stack) - [Installation and Setup](#installation-and-setup) - [Live Demo](#live-demo)
 
 ## Project Description:
 
@@ -78,5 +74,9 @@ FarmFi Labs has the potential to reshape the agriculture industry by:
 
 4. **Access the Application:**
    Visit `http://localhost:3000` to interact with the FarmFi Labs platform.
+
+## Live Demo
+
+Check out the live demo of FarmFi Labs here: [FarmFi Labs Live](https://labs-farmfi.netlify.app/)
 
 FarmFi Labs aims to empower the agriculture industry through decentralized finance, blockchain, and innovative governance, transforming the way agricultural products are managed and traded.
