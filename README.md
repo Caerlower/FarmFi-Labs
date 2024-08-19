@@ -2,7 +2,12 @@
 
 ## Table of Contents
 
-- [Project Description](#project-description) - [Target Audience](#target-audience) - [Potential Impact](#potential-impact) - [Tech Stack](#tech-stack) - [Installation and Setup](#installation-and-setup) - [Live Demo](#live-demo)
+- [Project Description](#project-description)
+- [Target Audience](#target-audience)
+- [Potential Impact](#potential-impact)
+- [Tech Stack](#tech-stack)
+- [Installation and Setup](#installation-and-setup)
+- [Live Demo](#live-demo)
 
 ## Project Description:
 
